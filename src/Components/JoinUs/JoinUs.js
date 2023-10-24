@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './JoinUs.css';
 import $ from 'jquery';
-import { firebaseStorage } from '../../Firebase';
-import { CollectionNames, Strings } from '../../Utilities/Constants';
-import { postIntoCollection, postPendingMemberInformation } from '../../Utilities/FirebaseUtils';
+import { Strings } from '../../Utilities/Constants';
 import { Helmet } from 'react-helmet';
 
 const JoinUs = () => {
@@ -48,51 +46,6 @@ const JoinUs = () => {
             imageLink: imageLink,
             trxID: transactionID
         };
-
-        if(formInfo.imageLink !== Strings.placeholder_image_link) {
-            //                              Get the UNIX time of upload as a seed, get file name
-            const filePath = `/uploads/user_images/${(new Date()).getTime()}_${previewImageFile.name}`;
-            
-            // Get reference in the storage bucket
-            const fileRef = firebaseStorage.ref(filePath);
-
-            // Create upload task/promise
-            const uploadTask = fileRef.put(previewImageFile);
-
-            // Upon promise execution and resolution,
-            // Firebase upload task, state_change observers: (on progress, on failure, on success)
-            uploadTask.on('state_change',
-                // On progress callback function, params = snapshot: UploadTaskSnapshot
-                (snapshot) => {
-                    // (Optional)
-                    // TODO: Implement a upload progress bar here.
-
-                    console.log('Uploaded ' + snapshot.bytesTransferred + 'bytes out of ' + snapshot.totalBytes);
-                },
-
-                // On failure callback, params = error: FirebaseStorageError
-                (error) => {
-                    console.log(error);
-                    alert(error.message);
-                    window.location.reload();
-                },
-
-                // On success callback, No-param
-                () => {
-                    uploadTask.snapshot.ref.getDownloadURL().then((dwnUrl) => {
-                        console.log('Uploaded file to: ' + dwnUrl);
-
-                        // Set image link for easier firestore reference.
-                        formInfo.imageLink = dwnUrl;
-                    });
-
-                    postIntoCollection(formInfo, CollectionNames.pending_members);
-                }
-            );
-        } else {
-            postIntoCollection(formInfo, CollectionNames.pending_members);
-        }
-
         
         console.log(formInfo);
     }

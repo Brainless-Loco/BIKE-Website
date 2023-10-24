@@ -18,17 +18,16 @@ const Home = () => {
     return (
         <div>
             <Helmet>
-                <title> CUAC | Chittagong University Advenchar Club</title>
+                <title> BIKE - CSE CU</title>
             </Helmet>
-            <div className="home-first">
-                <div className="slideShow" uk-slideshow="finite: true;autoplay: true;autoplay-interval: 1200; velocity: .3; draggable:false; animation: scale">
+            <div id='homeBackground' className="home-first">
+                {/* <div  className="slideShow" uk-slideshow="finite: true;autoplay: true;autoplay-interval: 1200; velocity: .3; draggable:false; animation: scale">
                  
-                </div>       
+                </div>        */}
                 <div className="middle-center text-center">
                     <h1 className="text-white pb-0">Welcome to the world of Travellers</h1>
                     <p className="">
-                        {/* Get a substring of 128 characters of the placeholder text */}
-                        {Strings.placeholder_text.substr(0, 128)}
+                        {Strings.placeholder_text.substr(0, 128)+"hahaha"}
                     </p>
                     <br/>
                     <Link to="/Join-us" className="join-us-button">Join us</Link>

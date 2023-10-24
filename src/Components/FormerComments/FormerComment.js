@@ -1,8 +1,6 @@
 import React from 'react';
 import OneComment from '../OneComment/OneComment';
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore from 'swiper/core';
-// import "swiper/components/pagination/pagination.min.css";
 import 'swiper/css'
 import './FormerComment.css';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../../Images/logo.png';
+import logo from '../../Images/Logo/logo.svg';
 
 const Header = () => {
     let menuList = ["Home","Join-us"]
