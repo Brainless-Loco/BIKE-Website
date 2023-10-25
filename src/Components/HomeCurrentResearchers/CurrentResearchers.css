@@ -1,7 +1,7 @@
 .svg-bg{
     background-image: linear-gradient(to right, #0f0c29,#302b63,#24243e);
 }
-.see-more-button{
+.see-all-button{
     padding: 20px;
     background-color: rgb(12, 42, 141);
     color: white;
@@ -11,7 +11,7 @@
     border: 3px solid transparent;
     transition: all .5s;
 }
-.see-more-button:hover{
+.see-all-button:hover{
     text-decoration: none;
     color: rgb(12, 42, 141);
     background-color: white;

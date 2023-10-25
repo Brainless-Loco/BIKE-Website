@@ -5,7 +5,7 @@ import './Home.css';
 import $ from 'jquery';
 import About from '../AboutSection/About';
 import Count from '../CountSection/Count';
-import HomeMemories from '../HomeMemories/HomeMemories';
+import HomeMemories from '../HomeCurrentResearchers/CurrentResearchers';
 import { Strings } from '../../Utilities/Constants';
 import FormerComment from '../FormerComments/FormerComment';
 import HomeEvents from '../HomeEventTimeLine/HomeEvents';
