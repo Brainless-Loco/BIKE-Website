@@ -1,9 +1,10 @@
 .join-us-page{
     padding-top: 80px;
     padding-bottom: 50px;
-    min-height: 50vh;
+    min-height: 100vh;
     background-color: #ecf0f1;
     text-align: center;
+    height: auto;
 }
 .join-us-page .why-join-us{
     font-size: 16px;

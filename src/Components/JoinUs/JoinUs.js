@@ -15,7 +15,6 @@ const JoinUs = () => {
     const [phone, setPhone] = useState('');
     const [bloodGroup, setBloodGroup] = useState('');
     const [gender, setGender] = useState('');
-    const [transactionID, setTransactionID] = useState('');
     const [previewImageURL, setPreviewImageURL] = useState(Strings.placeholder_image_link);
     const [previewImageFile, setPreviewImageFile] = useState(null);
 
@@ -31,8 +30,7 @@ const JoinUs = () => {
 
     const handleSubmitButton = (firstName, lastName, gender, 
         bloodGroup, address, phone, 
-        department, studentID, session, 
-        transactionID, imageLink) => {
+        department, studentID, session, imageLink) => {
         const formInfo = {
             firstName: firstName,
             lastName: lastName,
@@ -44,7 +42,6 @@ const JoinUs = () => {
             studentID: studentID,
             session: session,
             imageLink: imageLink,
-            trxID: transactionID
         };
         
         console.log(formInfo);
@@ -61,15 +58,18 @@ const JoinUs = () => {
             <Helmet>
                 <title>Join CUAC | CUAC</title>
             </Helmet>
-            <h1 className="display-4 mt-0 font-weight-bold text-color1 text-center py-2">Join CUAC Today</h1>
-            <div className="join-us-banner">
-                <img src="Image/logo.png" className="mx-auto col-11 col-md-9 col-lg-7 col-xl-6" alt="" srcset="" />
+            <h1 className="display-4 mt-0 font-weight-bold text-color1 text-center py-2">Join BIKE</h1>
+            <div className='row mx-5 mb-5' style={{display:'flex',justifyContent:'center',flexDirection:'row',alignItems:'center'}}>
+                <div className="join-us-banner mx-auto col-11 col-md-9 col-lg-4">
+                    <img src="Image/logo.png" style={{borderRadius:'10px'}} alt="" srcset="" />
+                </div>
+                <p className="why-join-us text-left mx-2 px-2 mx-auto col-11 col-md-9 col-lg-8">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit dolorum labore rerum, quo doloribus quis consequatur facere eveniet veritatis quisquam voluptas quam est ad ullam ipsum quidem fugit harum alias minima enim? Itaque minima esse deleniti excepturi earum optio molestias? Corporis eius quaerat aperiam iusto nostrum, recusandae sapiente maiores id.
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nostrum corrupti ipsum nisi nihil, ex ad accusantium laboriosam quidem soluta culpa incidunt eligendi beatae ducimus labore esse obcaecati odio? Nostrum ut fugit reprehenderit animi facere similique odit optio consequatur eligendi dicta harum aut perferendis ex, nam sint. Blanditiis, beatae accusamus praesentium, ducimus nam soluta iste nostrum odio ratione est sapiente, hic doloribus. Sed saepe iure corrupti modi nobis velit ducimus praesentium perspiciatis error enim dolorem, maxime fuga, impedit eaque sit omnis qui delectus nostrum! Nihil repellat neque mollitia eum debitis, reprehenderit quo nesciunt recusandae distinctio sed facilis quas sunt fugiat.
+                </p>
             </div>
-            <p className="why-join-us text-left mx-2 px-2">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit dolorum labore rerum, quo doloribus quis consequatur facere eveniet veritatis quisquam voluptas quam est ad ullam ipsum quidem fugit harum alias minima enim? Itaque minima esse deleniti excepturi earum optio molestias? Corporis eius quaerat aperiam iusto nostrum, recusandae sapiente maiores id.
-                <br />
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nostrum corrupti ipsum nisi nihil, ex ad accusantium laboriosam quidem soluta culpa incidunt eligendi beatae ducimus labore esse obcaecati odio? Nostrum ut fugit reprehenderit animi facere similique odit optio consequatur eligendi dicta harum aut perferendis ex, nam sint. Blanditiis, beatae accusamus praesentium, ducimus nam soluta iste nostrum odio ratione est sapiente, hic doloribus. Sed saepe iure corrupti modi nobis velit ducimus praesentium perspiciatis error enim dolorem, maxime fuga, impedit eaque sit omnis qui delectus nostrum! Nihil repellat neque mollitia eum debitis, reprehenderit quo nesciunt recusandae distinctio sed facilis quas sunt fugiat.
-            </p>
+            
             <form  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                 <label className="col-md-8 col-lg-7 col-xl-6 py-2 my-2">
                     <input 
@@ -127,12 +127,6 @@ const JoinUs = () => {
                         value={address}  placeholder="Address"
                         onChange={(e) => setAddress(e.target.value)}></textarea>
                 </label>
-                <label className="col-md-8 col-lg-7 col-xl-6 py-2 my-2">
-                    <input 
-                        type='text'
-                        value={transactionID} placeholder="TrnxID"
-                        onChange={(e) => setTransactionID(e.target.value)}></input>
-                </label>
                 <div className="col-md-8 mx-auto col-lg-7 col-xl-6 py-2 my-2">
                     <div className="profile-img mx-auto">
                         <img 
@@ -152,7 +146,7 @@ const JoinUs = () => {
                         handleSubmitButton(firstName, lastName, gender, 
                                 bloodGroup, address, phone, 
                                 department, studentID, session, 
-                                transactionID, previewImageURL);
+                                previewImageURL);
                         }
                     }>Submit</button>
             </form>

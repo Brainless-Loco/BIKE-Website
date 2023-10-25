@@ -8,7 +8,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import JoinUs from './Components/JoinUs/JoinUs';
-import CreditDiv from './Components/CeditDiv/CreditDiv';
+import CreditDiv from './Components/CreditDiv/CreditDiv';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 function App() {

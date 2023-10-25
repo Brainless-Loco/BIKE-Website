@@ -11,9 +11,9 @@ const ContactUs = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo in necessitatibus eum, facilis quidem! Omnis rerum temporibus mollitia molestiae impedit culpa nostrum perferendis consectetur expedita, exercitationem dicta laborum nulla accusantium consequuntur error vitae consequatur corrupti! Fuga ea ab eveniet.
                 </p>
                 <div className="text-dark ml-3 px-2">
-                    <h1 className="d-inline h1 text-color1 mr-3"> <i className="fas fa-envelope"></i> </h1> <a href="mailto::someting@gmail.com" className="h2 text-color1">admin@admin.com</a>
+                    <h1 className="d-inline h1 text-color1 mr-3"> <i className="fas fa-envelope"></i> </h1> <a href="mailto::bikecsecu@gmail.com" className="h2 text-color1">bikecsecu@gmail.com</a>
                     <br/> <br />
-                    <h1 className="d-inline h1 text-color1 mr-3"> <i className="fab fa-facebook"></i> </h1> <a href="mailto::someting@gmail.com" className="h2 text-color1">admin@admin.com</a>
+                    <h1 className="d-inline h1 text-color1 mr-3"> <i className="fab fa-facebook"></i> </h1> <a href="mailto::bikecsecu@gmail.com" className="h2 text-color1">bikecsecu@gmail.com</a>
                 </div> 
             </div>
             <div className="col-md-6"  uk-scrollspy="cls: uk-animation-slide-right; delay:500; repeat: false">
