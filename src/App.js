@@ -7,7 +7,7 @@ import {
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
-import JoinUs from './Components/JoinUs/JoinUs';
+import ContactUs from './Components/ContactUsPage/ContactUs';
 import CreditDiv from './Components/CreditDiv/CreditDiv';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
@@ -23,7 +23,7 @@ function App() {
         <Header/>
         <Switch>
           <Route path={["/" , "/home" , "/Home"]} exact component={Home}/>
-          <Route path={["/Join-us" , "/join-us" , "/Join-CUAC"]} exact component={JoinUs}/>
+          <Route path={["/Contact-us" , "/join-us" , "/Join-BIKE"]} exact component={ContactUs}/>
           
         </Switch>
         <Footer></Footer>

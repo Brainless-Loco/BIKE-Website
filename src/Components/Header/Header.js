@@ -4,7 +4,7 @@ import './Header.css';
 import logo from '../../Images/Logo/logo.svg';
 
 const Header = () => {
-    let menuList = ["Home","Join-us"]
+    let menuList = ["Home","Research","Teaching","Projects","Tools","Researchers","Contact-us"]
     return (
         <div className="header">
             <Link to="/"><img className="logo" src={logo} alt="logo"/></Link>

@@ -4,14 +4,14 @@ import $ from 'jquery';
 import { Strings } from '../../Utilities/Constants';
 import { Helmet } from 'react-helmet';
 
-const JoinUs = () => {
+const ContactUs = () => {
     // States
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [department, setDepartment] = useState('');
     const [session, setSession] = useState('');
     const [studentID, setStudentID] = useState(0);
-    const [address, setAddress] = useState('');
+    const [message, setMessage] = useState('');
     const [phone, setPhone] = useState('');
     const [bloodGroup, setBloodGroup] = useState('');
     const [gender, setGender] = useState('');
@@ -28,19 +28,12 @@ const JoinUs = () => {
         }
     }
 
-    const handleSubmitButton = (firstName, lastName, gender, 
-        bloodGroup, address, phone, 
-        department, studentID, session, imageLink) => {
+    const handleSubmitButton = (firstName, lastName, message, phone, imageLink) => {
         const formInfo = {
             firstName: firstName,
             lastName: lastName,
-            gender: gender,
-            bloodGroup: bloodGroup,
-            currentAddress: address,
+            message: message,
             phone: phone,
-            department: department,
-            studentID: studentID,
-            session: session,
             imageLink: imageLink,
         };
         
@@ -85,7 +78,7 @@ const JoinUs = () => {
                         value={lastName} placeholder="Last Name"
                         onChange={(e) => setLastName(e.target.value)}></input>
                 </label>
-                <label className="col-md-8 col-lg-7 col-xl-6 py-2 my-2">
+                {/* <label className="col-md-8 col-lg-7 col-xl-6 py-2 my-2">
                     <input
                         type='text'
                         value={gender} placeholder="Gender"
@@ -108,24 +101,24 @@ const JoinUs = () => {
                         type='number'
                         value={studentID} placeholder="Student ID"
                         onChange={(e) => setStudentID(e.target.value)}></input>
-                </label>
+                </label> */}
                 <label className="col-md-8 col-lg-7 col-xl-6 py-2 my-2">
                     <input
                         type='text'
                         value={phone}  placeholder="Contact No."
                         onChange={(e) => setPhone(e.target.value)}></input>
                 </label>
-                <label className="col-md-8 col-lg-7 col-xl-6 py-2 my-2">
+                {/* <label className="col-md-8 col-lg-7 col-xl-6 py-2 my-2">
                     <input 
                         type='text'
                         value={bloodGroup} placeholder="Blood Group"
                         onChange={(e) => setBloodGroup(e.target.value)}></input>
-                </label>
+                </label> */}
                 <label className="col-md-8 col-lg-7 col-xl-6 py-2 my-2">
                     <textarea
                         type='text'
-                        value={address}  placeholder="Address"
-                        onChange={(e) => setAddress(e.target.value)}></textarea>
+                        value={message}  placeholder="Message"
+                        onChange={(e) => setMessage(e.target.value)}></textarea>
                 </label>
                 <div className="col-md-8 mx-auto col-lg-7 col-xl-6 py-2 my-2">
                     <div className="profile-img mx-auto">
@@ -143,9 +136,7 @@ const JoinUs = () => {
                     type='button' 
                     className="join-us-button"
                     onClick={(e) => {
-                        handleSubmitButton(firstName, lastName, gender, 
-                                bloodGroup, address, phone, 
-                                department, studentID, session, 
+                        handleSubmitButton(firstName, lastName, message, phone,
                                 previewImageURL);
                         }
                     }>Submit</button>
@@ -155,6 +146,6 @@ const JoinUs = () => {
 };
 
 
-export default JoinUs;
+export default ContactUs;
 
 
