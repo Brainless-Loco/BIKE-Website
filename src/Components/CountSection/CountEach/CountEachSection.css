@@ -9,6 +9,7 @@
     color: white;
     transition: all .6s;
     cursor: pointer;
+    overflow: hidden;
 }
 .eachCount:hover{
     background-color: #2b5fe2;

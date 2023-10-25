@@ -21,13 +21,10 @@ const Home = () => {
                 <title> BIKE - CSE CU</title>
             </Helmet>
             <div id='homeBackground' className="home-first">
-                {/* <div  className="slideShow" uk-slideshow="finite: true;autoplay: true;autoplay-interval: 1200; velocity: .3; draggable:false; animation: scale">
-                 
-                </div>        */}
                 <div className="middle-center text-center">
-                    <h1 className="text-white pb-0">Welcome to the world of Travellers</h1>
-                    <p className="">
-                        {Strings.placeholder_text.substr(0, 128)+"hahaha"}
+                    <h1 className="text-white pb-0">Welcome to BIKE CSE CU Lab</h1>
+                    <p className="Welcome-note">
+                        Big Data Information and Knowledge Engineering
                     </p>
                     <br/>
                     <Link to="/Join-us" className="join-us-button">Join us</Link>

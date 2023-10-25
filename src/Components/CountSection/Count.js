@@ -7,9 +7,9 @@ const Count = () => {
         <div className="count-section">
             <h1 className="text-white display-4 text-center font-weight-bold">Till Now</h1>
             <div className="row text-center">
-                <CountEachSection EndCount={100} Name="Successful Events" />
-                <CountEachSection EndCount={500} Name="Active Travellers" />
-                <CountEachSection EndCount={80} Name="Active Volunteers" />
+                <CountEachSection EndCount={10} Name="Active Researchers" />
+                <CountEachSection EndCount={10} Name="Research Publications" />
+                <CountEachSection EndCount={10} Name="Ongoing Researches" />
             </div>
             
         </div>

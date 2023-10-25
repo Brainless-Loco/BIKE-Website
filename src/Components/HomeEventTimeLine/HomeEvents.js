@@ -10,7 +10,6 @@ const HomeEvents = () => {
             <h1 className="h1 text-center mb-0">Activities of CUAC</h1>
 
             <Timeline className="py-1 mt-4 mb-5">
-                {/* Ekta Map cholbe Json Data er upore */}
                 <AnEventDiv/>
                 <AnEventDiv/>
                 <AnEventDiv/>
