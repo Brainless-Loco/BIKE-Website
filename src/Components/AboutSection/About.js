@@ -9,13 +9,13 @@ const About = () => {
                     <img src="./Image/logo.png" className="about-image" alt=""/>
                 </div>
                 <div className="col-lg-8">
-                    <h1 className="text-center display-4 mb-2 font-weight-bold" style={{color:'#102772'}}>About BIKE </h1>
+                    <h1 className="text-left display-4 mb-2 font-weight-bold" style={{color:'#102772',borderBottom:'4px solid #102772'}}>About BIKE </h1>
                     <p className="about-desc text-justify">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias corporis, quasi repellat deleniti quod commodi id natus libero odit perferendis laudantium recusandae iste aut sunt accusantium itaque esse iure cumque! Inventore veniam commodi architecto, eaque, quisquam in accusantium culpa eligendi sit consequuntur animi suscipit eveniet. Earum voluptas nulla exercitationem quia, veniam consequatur ex qui maiores incidunt eum quibusdam. Maxime reprehenderit veniam obcaecati numquam ipsum voluptatem quas, cumque beatae explicabo. Pariatur fugit voluptas repudiandae reiciendis quaerat blanditiis amet aperiam, fuga fugiat libero perspiciatis numquam minima ut, quia, excepturi minus ad qui delectus dolorum. Minima consectetur, officia laudantium atque dignissimos itaque error.
+                        Besides natural resources like land, oil, capital, labor, Data play a key role in modern economic production and become a raw material of business. Industry 4.0 shifting towards data-driven society. The values of data gets unlocked when it is semantically integrated and analytically explored to derive intelligent decisions. <br/><br/>
+                        The BIKE research group in Computer Science and Engineering Department, University of Chittagong conducts research in the fields of data, information and knowledge engineering, with emphasis on the data/information/knowledge lifecycle within data-intensive systems. Here, we mainly focus on Big (Linked) data management, integration, analysis, knowledge graph generation and exploration.
+
+
                     </p>
-                    <q className='about-desc'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat iusto iste molestiae quas enim molestias quod placeat fuga non!
-                    </q>
                 </div>
             </div>
         </div>

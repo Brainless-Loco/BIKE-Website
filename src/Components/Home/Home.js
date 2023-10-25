@@ -23,10 +23,10 @@ const Home = () => {
                 <div className="middle-center text-center">
                     <h1 className="text-white pb-0">Welcome to BIKE CSE CU Lab</h1>
                     <p className="Welcome-note">
-                        Big Data Information and Knowledge Engineering
+                        Big Data, Information, and Knowledge Engineering Lab
                     </p>
                     <br/>
-                    <Link to="/Join-us" className="join-us-button">Join us</Link>
+                    <Link to="/Join-us" className="join-us-button">Connect with us</Link>
                 </div>
                 
             </div>

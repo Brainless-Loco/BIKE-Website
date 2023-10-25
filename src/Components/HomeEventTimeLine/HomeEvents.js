@@ -7,7 +7,7 @@ import AnEventDiv from '../HomeEvent/AnEventDiv';
 const HomeEvents = () => {
     return (
         <div className="EventTimeLine py-5 col-md-11 mx-auto text-center">
-            <h1 className="h1 text-center mb-0">Activities of BIKE</h1>
+            <h1 className="h1 text-center mb-0">Recent Acitivities</h1>
 
             <Timeline className="py-1 mt-4 mb-5">
                 <AnEventDiv/>

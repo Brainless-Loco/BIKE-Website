@@ -8,13 +8,8 @@ const ContactUs = () => {
     // States
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
-    const [department, setDepartment] = useState('');
-    const [session, setSession] = useState('');
-    const [studentID, setStudentID] = useState(0);
     const [message, setMessage] = useState('');
     const [phone, setPhone] = useState('');
-    const [bloodGroup, setBloodGroup] = useState('');
-    const [gender, setGender] = useState('');
     const [previewImageURL, setPreviewImageURL] = useState(Strings.placeholder_image_link);
     const [previewImageFile, setPreviewImageFile] = useState(null);
 
@@ -49,14 +44,15 @@ const ContactUs = () => {
             {/* TODO: Implement photo upload function here.
                 Upload the photo to firestore and keep a reference of it in firestore.*/}
             <Helmet>
-                <title>Join CUAC | CUAC</title>
+                <title>Contact BIKE | BIKE</title>
             </Helmet>
-            <h1 className="display-4 mt-0 font-weight-bold text-color1 text-center py-2">Join BIKE</h1>
+            <h1 className="display-4 mt-0 font-weight-bold text-color1 text-center py-2">Contact BIKE</h1>
             <div className='row mx-5 mb-5' style={{display:'flex',justifyContent:'center',flexDirection:'row',alignItems:'center'}}>
                 <div className="join-us-banner mx-auto col-11 col-md-9 col-lg-4">
                     <img src="Image/logo.png" style={{borderRadius:'10px'}} alt="" srcset="" />
                 </div>
                 <p className="why-join-us text-left mx-2 px-2 mx-auto col-11 col-md-9 col-lg-8">
+                    <h2 style={{fontWeight:'500'}}>From the Director</h2>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit dolorum labore rerum, quo doloribus quis consequatur facere eveniet veritatis quisquam voluptas quam est ad ullam ipsum quidem fugit harum alias minima enim? Itaque minima esse deleniti excepturi earum optio molestias? Corporis eius quaerat aperiam iusto nostrum, recusandae sapiente maiores id.
                     <br />
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nostrum corrupti ipsum nisi nihil, ex ad accusantium laboriosam quidem soluta culpa incidunt eligendi beatae ducimus labore esse obcaecati odio? Nostrum ut fugit reprehenderit animi facere similique odit optio consequatur eligendi dicta harum aut perferendis ex, nam sint. Blanditiis, beatae accusamus praesentium, ducimus nam soluta iste nostrum odio ratione est sapiente, hic doloribus. Sed saepe iure corrupti modi nobis velit ducimus praesentium perspiciatis error enim dolorem, maxime fuga, impedit eaque sit omnis qui delectus nostrum! Nihil repellat neque mollitia eum debitis, reprehenderit quo nesciunt recusandae distinctio sed facilis quas sunt fugiat.
