@@ -23,8 +23,7 @@ function App() {
         <Header/>
         <Switch>
           <Route path={["/" , "/home" , "/Home"]} exact component={Home}/>
-          <Route path={["/Contact-us" , "/join-us" , "/Join-BIKE"]} exact component={ContactUs}/>
-          
+          <Route path={["/Contact-us" , "/join-us" , "/Join-BIKE","/Latest"]} exact component={ContactUs}/>
         </Switch>
         <Footer></Footer>
         <CreditDiv/>

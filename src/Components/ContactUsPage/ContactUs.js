@@ -11,7 +11,7 @@ const ContactUs = () => {
     const [message, setMessage] = useState('');
     const [phone, setPhone] = useState('');
     const [previewImageURL, setPreviewImageURL] = useState(Strings.placeholder_image_link);
-    const [previewImageFile, setPreviewImageFile] = useState(null);
+    // const [previewImageFile, setPreviewImageFile] = useState(null);
 
     // Handlers
     const handleImageUpload = (e) => {
@@ -19,7 +19,7 @@ const ContactUs = () => {
             let img = e.target.files[0];
 
             setPreviewImageURL(URL.createObjectURL(img));
-            setPreviewImageFile(img);
+            // setPreviewImageFile(img);
         }
     }
 
@@ -49,13 +49,14 @@ const ContactUs = () => {
             <h1 className="display-4 mt-0 font-weight-bold text-color1 text-center py-2">Contact BIKE</h1>
             <div className='row mx-5 mb-5' style={{display:'flex',justifyContent:'center',flexDirection:'row',alignItems:'center'}}>
                 <div className="join-us-banner mx-auto col-11 col-md-9 col-lg-4">
-                    <img src="Image/logo.png" style={{borderRadius:'10px'}} alt="" srcset="" />
+                    <img src="https://i.postimg.cc/G3vvRqvQ/image.png" style={{borderRadius:'10px'}} alt="" srcset="" />
                 </div>
                 <p className="why-join-us text-left mx-2 px-2 mx-auto col-11 col-md-9 col-lg-8">
-                    <h2 style={{fontWeight:'500'}}>From the Director</h2>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit dolorum labore rerum, quo doloribus quis consequatur facere eveniet veritatis quisquam voluptas quam est ad ullam ipsum quidem fugit harum alias minima enim? Itaque minima esse deleniti excepturi earum optio molestias? Corporis eius quaerat aperiam iusto nostrum, recusandae sapiente maiores id.
-                    <br />
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nostrum corrupti ipsum nisi nihil, ex ad accusantium laboriosam quidem soluta culpa incidunt eligendi beatae ducimus labore esse obcaecati odio? Nostrum ut fugit reprehenderit animi facere similique odit optio consequatur eligendi dicta harum aut perferendis ex, nam sint. Blanditiis, beatae accusamus praesentium, ducimus nam soluta iste nostrum odio ratione est sapiente, hic doloribus. Sed saepe iure corrupti modi nobis velit ducimus praesentium perspiciatis error enim dolorem, maxime fuga, impedit eaque sit omnis qui delectus nostrum! Nihil repellat neque mollitia eum debitis, reprehenderit quo nesciunt recusandae distinctio sed facilis quas sunt fugiat.
+                    <h2 style={{fontWeight:'500'}}>About the Director</h2>
+                    <p>Dr. Rudra Pratap Deb Nath is working as an associate professor in the <a target="_blank" rel="noopener noreferrer" href="https://cu.ac.bd/cse">Department of Computer Science and Engineering</a> at <a target="_blank" rel="noopener noreferrer" href="https://cu.ac.bd/">University of Chittagong</a>, Chattogram Bangladesh and the director of BIKE: Big Data, Information, and Knowledge Engineering Lab.</p>
+                    <p>He earned his Ph.D. titles from <a target="_blank" rel="noopener noreferrer" href="https://www.en.aau.dk/">Aalborg University</a>, Denmark and <a target="_blank" rel="noopener noreferrer" href="https://www.essi.upc.edu/dtim/">Universitat Politècnica</a> de Catalunya (UPC), Spain with the prestigious <strong>Erasmus Mundus Scholarship</strong> under the consortium of <a target="_blank" rel="noopener noreferrer" href="https://it4bi-dc.ulb.ac.be/">IT4BI-DC: Information Technology for Business Intelligence Doctoral College</a>. His Ph.D. thesis title is "<a target="_blank" rel="noopener noreferrer" href="https://vbn.aau.dk/en/publications/aspects-of-semantic-etl">Aspects of Semantic ETL</a>", where they proposed and developed an ontology-based semantic ETL tool that integrates semantic and non-semantic data into a semantic data warehouse and enables OLAP queries on it. He did his Master of Engineering in Toyohashi University of Technology Japan with the prestigious <strong>MEXT scholarship</strong>.</p>
+                    <p><strong>Nature</strong>: As a person, he is disciplined, professional, honest, humble, and friendly.</p>
+                    <p><strong>Hobby and Interest</strong>: Self Exploration and Realization, Singing, Instrument Playing, Dancing (Mostly Latin American styles: Salsa, Bachata, Zouk, Kizomba, Cha cha cha, and contemporary), Karate, and Cooking.&nbsp;</p>
                 </p>
             </div>
             
